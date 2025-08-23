@@ -1,1 +1,18 @@
-h1 = 'Home'
+.flex.justify-center.space-x-6.mt-16
+  .flex.flex-col.max-w-xl.space-y-2
+    p.text-6xl.font-bold Hello,
+    p.text-5xl My name is Matthew Williams
+    p.text-4xl I'm a software engineer based in Colorado Springs, CO.
+    p.text-3xl Welcome to my online portfolio!
+    p.text-2xl Please enjoy getting to know me and my work.
+    p.text-base I'm delighted that you're here  ^_^
+  = image_tag "me.jpg", alt: "Photo of Me", class: "h-80 w-64 border-4 border-black"
+
+.flex.justify-center.mt-8
+  p.text-4xl
+    = 'Key Technologies:'
+    .flex.mx-auto
+      = render "home/key_tech", file: "rails.png", alt: "Rails"
+
+
+
