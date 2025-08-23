@@ -1,5 +1,5 @@
 .flex.justify-center.space-x-6.mt-16
-  .flex.flex-col.max-w-xl.space-y-2
+  .flex.flex-col.max-w-xl.space-y-4
     p.text-6xl.font-bold Hello,
     p.text-5xl My name is Matthew Williams
     p.text-4xl I'm a software engineer based in Colorado Springs, CO.
@@ -8,11 +8,15 @@
     p.text-base I'm delighted that you're here  ^_^
   = image_tag "me.jpg", alt: "Photo of Me", class: "h-80 w-64 border-4 border-black"
 
-.flex.justify-center.mt-8
-  p.text-4xl
-    = 'Key Technologies:'
-    .flex.mx-auto
-      = render "home/key_tech", file: "rails.png", alt: "Rails"
+p.text-4xl.flex.justify-center.my-10.w-full.fw-bold
+  = 'Key Technologies:'
+  .flex.mx-auto.px-4.space-x-6.justify-center.w-full
+    = render "home/key_tech", file: "rails.png", alt: "Rails"
+    = render "home/key_tech", file: "js-logo.png", alt: "Javascript"
+    = render "home/key_tech", file: "aws-logo.png", alt: "AWS"
+    = render "home/key_tech", file: "postgresql-logo.png", alt: "Postgresql"
+    = render "home/key_tech", file: "docker-logo.png", alt: "Docker"
+    = render "home/key_tech", file: "new-relic-logo.png", alt: "New Relic"
 
 
 
