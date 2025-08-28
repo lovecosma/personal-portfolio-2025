@@ -1,0 +1,2 @@
+class KeyTechnology < ApplicationRecord
+end

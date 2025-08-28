@@ -1,4 +1,4 @@
-.flex.justify-center.space-x-6.mt-16
+.flex-none.lg:flex.justify-center.space-x-6.mt-16
   .flex.flex-col.max-w-xl.space-y-4
     p.text-6xl.font-bold Hello,
     p.text-5xl I am Matthew Williams
@@ -10,12 +10,7 @@
 
 .flex.justify-center.my-10.w-full.fw-bold
   h5.text-xl.font-bold.leading-none.text-gray-900.dark:text-white Key Technologies
-.grid.grid-cols-1.md:grid-cols-2.lg:grid-cols-3.gap-4.w-fit.mx-auto.px-10.py-4.space-x-10 role="list"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
-  = render "home/key_tech", filename: "ruby-on-rails-logo.png", alt: "Ruby on Rails Logo", name: "Ruby on Rails"
+.flex.justify-center.w-full
+  .grid.grid-cols-1.md:grid-cols-3.lg:grid-cols-4.gap-8 role="list"
+    - KeyTechnology.all.each do |key_technology|
+      = render Home::KeyTechnologyComponent.new(key_technology:)

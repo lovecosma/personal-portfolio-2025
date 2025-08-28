@@ -67,3 +67,9 @@ end
 gem "slim", "~> 5.2"
 
 gem "spring", "~> 4.4"
+
+gem "view_component", "~> 4.0"
+
+gem "dry-initializer", "~> 3.2"
+
+gem "dry-types", "~> 1.8"
