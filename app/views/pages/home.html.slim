@@ -4,13 +4,28 @@
       p.text-4xl.font-semibold.flex.justify-center.w-full.text-center Howdy,
       p.text-3xl.flex.justify-center.w-full.text-center My name is Matthew Williams
       p.text-3xl.flex.justify-center.w-full.text-center I'm a software engineer based in Colorado Springs, CO.
-      p.text-3xl.flex.justify-center.w-full.text-center I have 4+ years of experience building scalable apps
-      .flex.justify-center.space-x-4.mt-8
-        button.px-6.py-3.rounded-lg.bg-white.text-indigo-950.font-semibold.shadow.hover:bg-gray-100.transition Contact Me
+      p.text-3xl.flex.justify-center.w-full.text-center I have 4+ years of experience building web apps
+      p.text-3xl.flex.justify-center.w-full.text-center Thank you for visiting my website!
+      .flex.justify-center.space-x-12.mt-8
+        button.px-3.py-2.rounded-xl.bg-white.text-indigo-950.font-semibold.shadow.hover:bg-gray-100.hover:text-indigo-900.transition View Projects
+        button.px-3.py-2.rounded-xl.bg-white.text-indigo-950.font-semibold.shadow.hover:bg-gray-100.hover:text-indigo-900.transition Download Resume
+.p-2.min-h-screen.bg-blue-950
+  .flex.justify-center.my-15.w-full.fw-bold
+    .flex.flex-col.justify-center.items-center.text-center.space-y-6
+      .text-4xl.font-bold.leading-none Key Technologies
+      .text-xl.font-bold.leading-none I specialize in building full-stack apps with Rails
+  .flex.justify-center.w-full.px-5
+    .grid.grid-cols-1.w-full.space-y-10.px-2.md:grid-cols-2.lg:grid-cols-4
+      - TechType.all.each do |tech_type|
+        div
+          .flex.flex-col.justify-center.items-center.text-center
+            = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12"
+            .text-2xl.font-semibold.mb-4.text-center
+              = tech_type.name
+          - tech_type.technologies.each do |tech|
+            .m-1.text-center
+              = tech.name
+  .flex.justify-center.w-full.fw-bold.mb-4
+    .text-xl.font-bold.leading-none But I love opportunities to learn new technology too!
 
-.flex.justify-center.my-15.w-full.fw-bold
-  h5.text-xl.font-bold.leading-none.text-gray-900.dark:text-white Key Technologies
-.flex.justify-center.w-full
-  .grid.grid-cols-1.md:grid-cols-3.lg:grid-cols-4.gap-8 role="list"
-    - KeyTechnology.all.each do |key_technology|
-      = render Home::KeyTechnologyComponent.new(key_technology:)
+

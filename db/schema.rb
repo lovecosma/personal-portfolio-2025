@@ -10,15 +10,26 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[8.0].define(version: 2025_08_28_030040) do
+ActiveRecord::Schema[8.0].define(version: 2025_09_10_033349) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "pg_catalog.plpgsql"
 
-  create_table "key_technologies", force: :cascade do |t|
-    t.string "alt"
-    t.string "name"
-    t.string "filename"
+  create_table "tech_types", force: :cascade do |t|
+    t.string "name", null: false
+    t.string "icon_filename"
+    t.integer "rank"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  create_table "technologies", force: :cascade do |t|
+    t.string "name", null: false
+    t.bigint "tech_type_id", null: false
+    t.integer "rank"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["tech_type_id"], name: "index_technologies_on_tech_type_id"
+  end
+
+  add_foreign_key "technologies", "tech_types"
 end
