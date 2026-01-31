@@ -7,8 +7,11 @@
       p.text-3xl.flex.justify-center.w-full.text-center I have 4+ years of experience building web apps
       p.text-3xl.flex.justify-center.w-full.text-center Thank you for visiting my website!
       .flex.justify-center.space-x-12.mt-8
-        button.px-3.py-2.rounded-xl.bg-white.text-indigo-950.font-semibold.shadow.hover:bg-gray-100.hover:text-indigo-900.transition View Projects
-        button.px-3.py-2.rounded-xl.bg-white.text-indigo-950.font-semibold.shadow.hover:bg-gray-100.hover:text-indigo-900.transition Download Resume
+        = link_to "https://sol-calculations-2a5543766a23.herokuapp.com/", target: "_blank", rel: "noopener noreferrer", class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition" do
+          | Sample Project
+        = link_to "/docs/MatthewWilliamsResume.pdf", download: "MatthewWilliamsResume.pdf",
+                  class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition" do
+          | Download Resume
 .p-2.min-h-screen.bg-blue-950
   .flex.justify-center.my-15.w-full.fw-bold
     .flex.flex-col.justify-center.items-center.text-center.space-y-6
