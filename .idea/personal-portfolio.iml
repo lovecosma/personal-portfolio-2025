@@ -42,6 +42,7 @@
     <orderEntry type="library" scope="PROVIDED" name="connection_pool (v2.5.3, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="crass (v1.0.6, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="date (v3.4.1, jruby-10.0.0.1-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.6.2, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.8, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.3, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dry-initializer (v3.2.0, jruby-10.0.0.1-p0) [gem]" level="application" />
@@ -86,6 +87,7 @@
     <orderEntry type="library" scope="PROVIDED" name="rake (v13.3.0, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rdoc (v6.14.2, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="rexml (v3.4.1, jruby-10.0.0.1-p0) [gem]" level="application" />
+    <orderEntry type="library" scope="PROVIDED" name="rspec-expectations (v3.13.5, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ruby-progressbar (v1.13.0, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="securerandom (v0.4.1, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="slim (v5.2.1, jruby-10.0.0.1-p0) [gem]" level="application" />
