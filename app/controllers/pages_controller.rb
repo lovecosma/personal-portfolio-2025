@@ -1,8 +1,8 @@
 class PagesController < ApplicationController
-SAMPLE_WEBSITE_URL = "https://sol-calculations-2a5543766a23.herokuapp.com/".freeze
-RESUME_PATH = "/docs/MatthewWilliamsResumev2.pdf".freeze
 	def home
-		@tech_types = TechType.includes(:technologies).order(:rank)
+		@tech_types = TechType.ordered.includes(:technologies)
+		@sample_website_url = Rails.application.config.x.sample_website_url
+		@resume_path = Rails.application.config.x.resume_path
 	end
 
 	def about

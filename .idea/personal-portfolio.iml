@@ -45,7 +45,6 @@
     <orderEntry type="library" scope="PROVIDED" name="diff-lcs (v1.6.2, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="dotenv (v3.1.8, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="drb (v2.2.3, jruby-10.0.0.1-p0) [gem]" level="application" />
-    <orderEntry type="library" scope="PROVIDED" name="dry-initializer (v3.2.0, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="ed25519 (v1.4.0, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="erubi (v1.13.1, jruby-10.0.0.1-p0) [gem]" level="application" />
     <orderEntry type="library" scope="PROVIDED" name="fugit (v1.11.1, jruby-10.0.0.1-p0) [gem]" level="application" />

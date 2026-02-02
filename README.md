@@ -1,24 +1,43 @@
-# README
+# Personal Portfolio
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is my personal website, thanks for checking it out!
 
-Things you may want to cover:
+## Tech Stack
 
-* Ruby version
+- Ruby / Rails / PostgreSQL
+- Hotwire (Turbo + Stimulus) + Tailwind CSS
+- RSpec for testing
+- Deployed on Heroku
 
-* System dependencies
+## Setup
 
-* Configuration
+```bash
+# Install dependencies
+bundle install
+npm install
 
-* Database creation
+# Setup database
+bin/rails db:setup
 
-* Database initialization
+# Start server
+bin/dev
+```
 
-* How to run the test suite
+Visit `http://localhost:3000`
 
-* Services (job queues, cache servers, search engines, etc.)
+## Environment Variables
 
-* Deployment instructions
+Optional configuration in `.env`:
+- `SAMPLE_WEBSITE_URL` - URL to sample project
+- `RESUME_PATH` - Path to resume PDF
 
-* ...
+## Deployment
+
+```bash
+git push heroku main
+heroku run rails db:migrate
+```
+
+## License
+
+All rights reserved.

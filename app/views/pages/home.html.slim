@@ -11,9 +11,9 @@
       p.text-3xl.flex.justify-center.w-full.text-center I have 4+ years of experience building web apps
       p.text-3xl.flex.justify-center.w-full.text-center Thank you for visiting my website!
       .flex.flex-col.space-y-4.lg:flex-row.lg:space-y-0.lg:space-x-12.justify-center.my-8
-        = link_to PagesController::SAMPLE_WEBSITE_URL, target: "_blank", rel: "noopener noreferrer", class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition text-center" do
+        = link_to @sample_website_url, target: "_blank", rel: "noopener noreferrer", class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition text-center" do
           | Sample Project
-        = link_to PagesController::RESUME_PATH, download: "MatthewWilliamsResume.pdf",
+        = link_to @resume_path, download: "MatthewWilliamsResume.pdf",
                   class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition text-center" do
           | Download Resume
 .p-2.min-h-screen.bg-blue-950

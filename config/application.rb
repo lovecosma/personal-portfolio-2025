@@ -23,5 +23,9 @@ module PersonalPortfolio
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    # Custom application configuration
+    config.x.sample_website_url = ENV.fetch("SAMPLE_WEBSITE_URL", "https://sol-calculations-2a5543766a23.herokuapp.com/")
+    config.x.resume_path = ENV.fetch("RESUME_PATH", "/docs/MatthewWilliamsResumev2.pdf")
   end
 end

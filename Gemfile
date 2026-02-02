@@ -60,6 +60,9 @@ end
 group :development do
   # Use console on exceptions pages [https://github.com/rails/web-console]
   gem "web-console"
+
+  # Detect N+1 queries and unused eager loading
+  gem "bullet"
 end
 
 group :test do
@@ -72,9 +75,3 @@ end
 gem "slim", "~> 5.2"
 
 gem "spring", "~> 4.4"
-
-gem "view_component", "~> 4.0"
-
-gem "dry-initializer", "~> 3.2"
-
-gem "dry-types", "~> 1.8"
