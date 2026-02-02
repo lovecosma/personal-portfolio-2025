@@ -23,7 +23,7 @@
       .text-xl.font-bold.leading-none I specialize in building full-stack apps with Rails
   .flex.justify-center.w-full.px-5
     .grid.grid-cols-1.w-full.space-y-10.px-2.md:grid-cols-2.lg:grid-cols-4
-      - TechType.all.each do |tech_type|
+      - @tech_types.each do |tech_type|
         div
           .flex.flex-col.justify-center.items-center.text-center
             = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12"

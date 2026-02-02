@@ -2,7 +2,7 @@ class PagesController < ApplicationController
 SAMPLE_WEBSITE_URL = "https://sol-calculations-2a5543766a23.herokuapp.com/".freeze
 RESUME_PATH = "/docs/MatthewWilliamsResumev2.pdf".freeze
 	def home
-
+		@tech_types = TechType.includes(:technologies).order(:rank)
 	end
 
 	def about
