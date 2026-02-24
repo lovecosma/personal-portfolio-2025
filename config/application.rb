@@ -26,6 +26,6 @@ module PersonalPortfolio
 
     # Custom application configuration
     config.x.sample_website_url = ENV.fetch("SAMPLE_WEBSITE_URL", "https://sol-calculations-2a5543766a23.herokuapp.com/")
-    config.x.resume_path = ENV.fetch("RESUME_PATH", "/docs/MatthewWilliamsResumev2.pdf")
+    config.x.resume_path = ENV.fetch("RESUME_PATH", "/docs/MatthewWilliamsResumev3.pdf")
   end
 end
