@@ -4,16 +4,20 @@
 
 .py-10.px-5.min-h-screen
   .flex-none.lg:flex.justify-center.items-center.gap-32.mt-16.w-full
-    p.block.lg:hidden.text-center.text-lg.font-bold.mb-8.p-6.rounded-xl class="bg-indigo-950/50" Web Developer Educator Musician Husband & Father
+    .flex.flex-col.items-center.lg:hidden.text-center.text-lg.font-bold.mb-8.p-6.rounded-xl class="bg-indigo-950/50"
+      span Web Developer
+      span Educator
+      span Musician
+      span Husband & Father
     .flex.justify-center.p-4.rounded-xl.mb-6 class="bg-indigo-950/50"
-      = image_tag 'about-hero-image.png', alt: "Matthew Williams", class: "w-full h-auto rounded-xl 2xl:w-[700px]"
+      = image_tag 'about-hero-image.png', alt: "Matthew Williams", class: "w-full h-auto rounded-xl 2xl:w-[490px]"
     .flex.flex-col.justify-center.space-y-4.leading-8.lg:w-1/3.2xl:w-2/5.w-full.justify-center.items-center.text-center.space-y-6.p-6.rounded-xl class="bg-indigo-950/50"
-      .hidden.lg:block.p.text-2xl.font-bold.2xl:text-4xl Web Developer • Educator • Musician • Husband & Father
+      .hidden.lg:block.p.text-lg.font-bold.2xl:text-2xl Web Developer • Educator • Musician • Husband & Father
       .py-1.font-semibold.space-y-4
-        p.text-xl.leading-none.lg:text-3xl.2xl:text-6xl Building with empathy.
-        p.text-xl.leading-none.lg:text-3xl.2xl:text-6xl Shipping with precision.
-        p.text-xl.leading-none.lg:text-3xl.2xl:text-6xl Climbing what’s next.
-      p.text-base.lg:text-xl.2xl:text-2xl
+        p.text-xl.leading-none.lg:text-xl.2xl:text-4xl Building with empathy.
+        p.text-xl.leading-none.lg:text-xl.2xl:text-4xl Shipping with precision.
+        p.text-xl.leading-none.lg:text-xl.2xl:text-4xl Climbing what’s next.
+      p.text-base.lg:text-base.2xl:text-lg
         | My name is Matthew Williams. I'm a software engineer based in Savannah, GA. I have 6+ years of experience building web apps. Thank you for visiting my website!
       .flex.flex-col.space-y-4.lg:flex-row.lg:space-y-0.lg:space-x-4.my-8
         = link_to @sample_website_url, target: "_blank", rel: "noopener noreferrer", class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition text-center" do
@@ -25,19 +29,19 @@
   .flex.justify-center.my-15.w-full.px-4.lg:p-20
     .w-full.p-6.rounded-xl.space-y-8 class="bg-indigo-950/50"
       .flex.flex-col.justify-center.items-center.text-center.space-y-6
-        .text-2xl.font-bold.leading-none.mb-6.lg:text-4xl.2xl:text-7xl Key Technologies
-        .text-base.font-bold.leading-none.lg:text-xl.2xl:text-3xl I specialize in building full-stack apps with Rails
+        .text-2xl.font-bold.leading-none.mb-6.lg:text-2xl.2xl:text-2xl Key Technologies
+        .text-base.font-bold.leading-none.lg:text-base.2xl:text-lg I specialize in building full-stack apps with Rails
       .grid.grid-cols-1.w-full.space-y-10.px-2.md:grid-cols-2.lg:grid-cols-4
         - @tech_types.each do |tech_type|
           div
             .flex.flex-col.justify-center.items-center.text-center
-              = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12 2xl:w-24 2xl:h-24"
-              .text-lg.font-semibold.mb-4.text-center.lg:text-2xl.2xl:text-4xl
+              = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12 2xl:w-20 2xl:h-20"
+              .text-lg.font-semibold.mb-4.text-center.lg:text-lg.2xl:text-xl
                 = tech_type.name
             - tech_type.technologies.each do |tech|
-              .m-1.text-center.2xl:text-2xl
+              .m-1.text-center.2xl:text-base
                 = tech.name
       .flex.justify-center.w-full.mt-4
-        .text-base.text-center.font-bold.leading-none.lg:text-xl.2xl:text-3xl But I love opportunities to learn new technology too!
+        .text-base.text-center.font-bold.leading-none.lg:text-base.2xl:text-lg But I love opportunities to learn new technology too!
 
 
