@@ -7,19 +7,19 @@
     .flex.flex-col.justify-center.items-center.space-y-8.px-4
       section.text-left.min-h-screen.flex.flex-col.justify-center.py-16
         .lg:flex.justify-center.items-start.w-full.space-x-6.px-4.text-center.lg:text-left
-          .space-y-4.w-full.lg:w-1/2
-            h2.text-3xl.2xl:text-5xl.font-semibold.mb-4 Movement Has Always Shaped Me
-            p.text-xl.2xl:text-3xl
+          .space-y-4.w-full.lg:w-1/2.p-6.rounded-lg.lg:p-0.lg:rounded-none class="bg-indigo-950/50 lg:bg-transparent"
+            h2.text-4xl.2xl:text-5xl.font-semibold.mb-4 Movement Has Always Shaped Me
+            p.text-2xl.2xl:text-3xl
               | I was born in Germany and raised in constant motion, moving across states and countries as part of a military family.
             .lg:hidden.flex.justify-center.w-full
               = image_tag 'airplane.jpeg', alt: "New Orleans", class: "lg:w-3/4 w-full aspect-square object-cover shadow-xl z-100"
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Yet despite the movement, New Orleans has always been home. It's rhythm, culture, and community anchored me. Music became my way of creating stability.
             .lg:hidden.flex.justify-center.w-full.z-20
               = image_tag 'new-orleans.JPG', alt: "Aerial view of city at night", class: "lg:w-3/4 w-full aspect-square object-cover shadow-xl"
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Music carried me through adolescence and into adulthood, eventually leading me to LSU, where I studied Music and Digital Media Programming.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Over time, my instinct for structure evolved. What began in sound became systems. What began in rhythm became code.
 
           .hidden.lg:block.relative.lg:w-1/4.w-full.mb-6.mr-6
@@ -28,7 +28,7 @@
 
       section.lg:text-left.min-h-screen.flex.flex-col.justify-center.text-center.py-16
         .lg:flex.justify-center.items-start.w-full.space-x-6.px-4
-          h2.lg:hidden.text-center.text-3xl.2xl:text-5xl.font-semibold.mb-4 From Studio to Systems
+          h2.lg:hidden.text-center.text-4xl.2xl:text-5xl.font-semibold.w-full.p-6.rounded-lg class="bg-indigo-950/50" From Studio to Systems
           .w-full.mb-6.lg:hidden data-controller="carousel"
             .relative.w-full
               div data-carousel-target="slide"
@@ -39,51 +39,47 @@
                 = image_tag 'me-lsu-stage.JPG', alt: "Me creative coding", class: "w-full aspect-square object-cover shadow-xl"
               div.hidden data-carousel-target="slide"
                 = image_tag 'me-creative-coding.jpeg', alt: "LSU mixer", class: "w-full aspect-square object-cover shadow-xl"
-            .flex.justify-center.space-x-2.mt-3
-              div.w-3.h-3.rounded-full.bg-white.opacity-100 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
+            .flex.justify-center.space-x-2.mt-3 data-carousel-target="dotContainer"
           .hidden.lg:grid.grid-cols-2.lg:w-1/3.w-full.mb-6.lg:mb-0
             = image_tag 'lsu-mixer.JPG', alt: "Me on LSU stage", class: "lg:relative w-full aspect-square object-cover shadow-xl lg:rotate-2 lg:translate-x-8 lg:translate-y-8 z-10"
             = image_tag 'me-lsu-stage.JPG', alt: "Me creative coding", class: "lg:relative w-full aspect-square object-cover shadow-xl lg:-rotate-1 lg:-translate-x-8 lg:translate-y-8 z-20"
             .hidden.lg:flex
               = image_tag 'me-creative-coding.jpeg', alt: "LSU mixer", class: "relative w-full aspect-square object-cover shadow-xl -rotate-2 translate-x-8 -translate-y-8 z-20"
               = image_tag 'lsu-stage.JPG', alt: "LSU stage", class: "relative w-full aspect-square object-cover shadow-xl rotate-3 -translate-x-8 -translate-y-8 z-30"
-          .space-y-4.lg:w-1/2.w-full.lg:text-left.text-center
-            h2.hidden.lg:block.text-3xl.2xl:text-5xl.font-semibold.mb-4 From Studio to Systems
-            p.text-xl.2xl:text-3xl
+          .space-y-4.lg:w-1/2.w-full.lg:text-left.text-center.p-6.rounded-lg.lg:p-0.lg:rounded-none class="bg-indigo-950/50 lg:bg-transparent"
+            h2.hidden.lg:block.text-4xl.2xl:text-5xl.font-semibold.mb-4 From Studio to Systems
+            p.text-2xl.2xl:text-3xl
               | At LSU, I began working in the music studio — recording, editing, arranging. I became obsessed with layers, timing, and structure.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Around the same time, I started working with JavaScript and multimedia tools like PD, Processing.js, and p5.js.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Code was expressive. Visual. Alive.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | The studio taught me how to listen for patterns.
               br
                 | Programming taught me how to build them.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | I later completed the full-stack software engineering program at Flatiron School, where I trained in SQL, Ruby on Rails, and React.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Craft replaced curiosity.
 
       section.text-center.lg:text-left.min-h-screen.flex.flex-col.justify-center.py-16
         .flex.justify-center.items-center.w-full.space-x-6.px-4
-          .space-y-4.w-full.lg:w-1/2.text-center class="lg:text-left"
-            h2.text-3xl.2xl:text-5xl.font-semibold.mb-4.text-center class="lg:text-left" From Student to Teacher to Engineer
+          .space-y-4.w-full.lg:w-1/2.text-center.p-4.rounded-lg.lg:p-0.lg:rounded-none class="bg-indigo-950/50 lg:bg-transparent lg:text-left"
+            h2.text-4xl.2xl:text-5xl.font-semibold.mb-4.text-center class="lg:text-left" From Student to Teacher to Engineer
             .flex.w-full.lg:hidden
               = image_tag 'me-at-flatiron.JPG', alt: "Me at Flatiron", class: "w-full aspect-square object-cover shadow-lg"
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | After graduating from Flatiron, I stayed on to teach — first part-time, then full-time. Teaching sharpened my understanding of software design and deepened my belief that clarity and empathy matter in engineering.
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | I later joined G2 as a software engineer, where I spent four years building, shipping, and growing. During that time, I earned two AWS Cloud Computing certifications and was nominated for awards recognizing performance and entrepreneurial spirit.
             .flex.w-full.lg:hidden
               = image_tag 'g2-screenshot.png', alt: "G2 screenshot", class: "w-full h-full shadow-lg z-10"
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | I was also appointed co-lead of G2's DEI employee resource group — a role that reflected something I value deeply: authenticity and kindness in professional spaces.
             .flex.lg:hidden.w-full
               = image_tag 'me-at-g2.JPG', alt: "Me at G2", class: "w-full aspect-square object-cover shadow-lg z-20"
-            p.text-xl.2xl:text-3xl
+            p.text-2xl.2xl:text-3xl
               | Growth, to me, has always meant lifting others as you climb.
           .hidden.lg:flex.flex-col.items-center.w-1/3.space-y-3
             = image_tag 'me-at-flatiron.JPG', alt: "Me at Flatiron", class: "w-1/2 aspect-square object-cover shadow-lg -translate-x-30 translate-y-10"
@@ -91,7 +87,7 @@
             = image_tag 'me-at-g2.JPG', alt: "Me at G2", class: "w-1/2 aspect-square object-cover shadow-lg translate-x-40 -translate-y-10 z-20"
 
       section.min-h-screen.flex.flex-col.justify-center.py-16.space-x-8
-        h2.lg:hidden.text-center.text-3xl.2xl:text-5xl.font-semibold.mb-4 And Still Climbing
+        h2.lg:hidden.text-center.text-4xl.2xl:text-5xl.font-semibold.w-full.p-6.rounded-lg class="bg-indigo-950/50" And Still Climbing
         .lg:flex.justify-center.items-start.w-full.space-x-6.px-4
           .w-full.mb-6.lg:hidden data-controller="carousel"
             .relative.w-full
@@ -109,15 +105,7 @@
                 = image_tag 'hiking.JPG', alt: "Hiking", class: "w-full aspect-square object-cover shadow-xl"
               div.hidden data-carousel-target="slide"
                 = image_tag 'family-1.jpg', alt: "Family", class: "w-full aspect-square object-cover shadow-xl"
-            .flex.justify-center.space-x-2.mt-3
-              div.w-3.h-3.rounded-full.bg-white.opacity-100 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-              div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
+            .flex.justify-center.space-x-2.mt-3 data-carousel-target="dotContainer"
           .hidden.flex-shrink-0 class="lg:flex lg:items-start"
             .flex.flex-col.-space-y-24
               = image_tag 'parade.JPG', alt: "Parade", class: "relative w-56 h-56 object-cover shadow-xl rotate-2 2xl:w-72 2xl:h-72"
@@ -128,15 +116,15 @@
               = image_tag 'scenic.jpg', alt: "Scenic view", class: "relative w-56 h-56 object-cover shadow-xl rotate-1 2xl:w-72 2xl:h-72"
               = image_tag 'me-peforming.JPG', alt: "Me performing", class: "relative w-56 h-56 object-cover shadow-xl -rotate-3 mt-14 2xl:w-72 2xl:h-72"
           .flex.flex-col.space-y-8.lg:w-1/2.space-x-6
-            .space-y-4.text-center.lg:text-left
-              h2.text-3xl.2xl:text-5xl.font-semibold.mb-4.hidden.lg:block And Still Climbing
-              p.text-xl.2xl:text-3xl
+            .space-y-4.text-center.lg:text-left.mb-20.p-6.rounded-lg.lg:p-0.lg:rounded-none class="bg-indigo-950/50 lg:bg-transparent"
+              h2.text-4xl.2xl:text-5xl.font-semibold.mb-4.hidden.lg:block And Still Climbing
+              p.text-2xl.2xl:text-3xl
                 | My friends and family would describe me as adventurous, determined, kind, and deeply family-oriented.
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | I'm a husband and a father of three — soon to be four.
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | Over the past six years in Colorado, we've embraced the outdoors together. Hiking, exploring, climbing.
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | I've never stopped making music. And during these years, I've climbed mountains I once thought were beyond my reach — professionally, creatively, and personally.
             .flex.items-center.space-x-6
               .flex.lg:hidden.w-full
@@ -148,9 +136,9 @@
                 .w-full.flex.items-center.justify-center.p-4
                   iframe.2xl:w-3/4.h-full src="https://www.youtube.com/embed/hcXohBUeFTY?si=nGAkWhRIqjZW9V57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
 
-      section.text-left.min-h-screen.flex.flex-col.justify-center.py-16
+      section.text-left.min-h-screen.flex.flex-col.justify-center.py-16.space-y-8
         / Mobile title
-        h2.lg:hidden.text-center.text-3xl.font-semibold.mb-4 A New Chapter
+        h2.lg:hidden.text-center.text-4xl.font-semibold.w-full.p-6.rounded-lg class="bg-indigo-950/50" A New Chapter
         / Mobile carousel
         .w-full.lg:hidden data-controller="carousel"
           .relative.w-full
@@ -158,54 +146,55 @@
               = image_tag 'mountains.JPG', alt: "Mountains", class: "w-full aspect-square object-cover shadow-xl"
             div.hidden data-carousel-target="slide"
               = image_tag 'beach.JPG', alt: "Beach", class: "w-full aspect-square object-cover shadow-xl"
-          .flex.justify-center.space-x-2.mt-3
-            div.w-3.h-3.rounded-full.bg-white.opacity-100 data-carousel-target="dot"
-            div.w-3.h-3.rounded-full.bg-white.opacity-30 data-carousel-target="dot"
-        .space-y-4.w-full.px-4.text-center.lg:hidden
-          p.text-xl
+          .flex.justify-center.space-x-2.mt-3 data-carousel-target="dotContainer"
+        .space-y-4.w-full.p-6.text-center.lg:hidden.rounded-lg class="bg-indigo-950/50"
+          p.text-2xl
             | I'm currently in a season of transition — moving from Colorado to be closer to family in Savannah, Georgia.
-          p.text-xl
+          p.text-2xl
             | Transitions can be intimidating.
             br
             | They're also clarifying.
           iframe.w-full.shadow-lg.z-10 height="315" src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-          p.text-xl
+          p.text-2xl
             | I'm seeking my next professional peak — an opportunity to continue growing as a developer, husband, father, and person while making meaningful impact alongside people who value integrity, curiosity, and kindness.
-          p.text-xl.font-medium
+          p.text-2xl.font-medium
             | The climb continues.
         .hidden.lg:flex.2xl:hidden.justify-center.items-center.w-full.px-4.space-x-6
           .space-y-4.w-1/2.text-left
-            h2.text-3xl.font-semibold.mb-4 A New Chapter
-            p.text-xl
+            h2.text-4xl.font-semibold.mb-4 A New Chapter
+            p.text-2xl
               | I'm currently in a season of transition — moving from Colorado to be closer to family in Savannah, Georgia.
-            p.text-xl
+            p.text-2xl
               | Transitions can be intimidating.
               br
               | They're also clarifying.
-            p.text-xl
+            p.text-2xl
               | I'm seeking my next professional peak — an opportunity to continue growing as a developer, husband, father, and person while making meaningful impact alongside people who value integrity, curiosity, and kindness.
-            p.text-xl.font-medium
+            p.text-2xl.font-medium
               | The climb continues.
           .flex.flex-col.items-center.w-1/3.space-y-3
             = image_tag 'mountains.JPG', alt: "Mountains", class: "w-3/4 aspect-square object-cover shadow-lg -translate-x-8 translate-y-4"
             iframe.w-3/4.shadow-lg.z-10 height="315" src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
             = image_tag 'beach.JPG', alt: "Beach", class: "w-3/4 aspect-square object-cover shadow-lg translate-x-8 -translate-y-4"
-        / 2xl+: two-row layout
-        .hidden.2xl:flex.justify-center.items-start.w-full.px-4.space-x-10.mb-10
+        .hidden.2xl:flex.justify-center.items-start.w-full.px-4.space-x-10.mb-10.space-y-4
           .px-10.flex.flex-col.w-3/4
-            h2.text-3xl.2xl:text-5xl.font-semibold.shrink-0 A New Chapter
+            h2.text-4xl.2xl:text-5xl.font-semibold.shrink-0 A New Chapter
             .space-y-4.flex-1
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | I'm currently in a season of transition — moving from Colorado to be closer to family in Savannah, Georgia.
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | Transitions can be intimidating.
                 br
                 | They're also clarifying.
-              p.text-xl.2xl:text-3xl
+              p.text-2xl.2xl:text-3xl
                 | I'm seeking my next professional peak — an opportunity to continue growing as a developer, husband, father, and person while making meaningful impact alongside people who value integrity, curiosity, and kindness.
-              p.text-xl.2xl:text-3xl.font-medium
+              p.text-2xl.2xl:text-3xl.font-medium
                 | The climb continues.
-        .hidden.2xl:flex.w-full.px-4.justify-center.items-center.gap-6
-          = image_tag 'mountains.JPG', alt: "Mountains", class: "w-56 2xl:w-72 aspect-square object-cover shadow-lg"
-          iframe.shadow-lg.z-10.w-2/5.h-full src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-          = image_tag 'beach.JPG', alt: "Beach", class: "w-56 2xl:w-72 aspect-square object-cover shadow-lg"
+        .flex.justify-center.w-full
+          .hidden.2xl:flex.2xl:w-1/2.px-4.justify-center.items-center.gap-6
+            .w-1/3
+              = image_tag 'mountains.JPG', alt: "Mountains", class: "w-full 2xl:w-full aspect-square object-cover shadow-lg"
+            .w-1/3
+              iframe.w-full.aspect-square.shadow-lg.z-10 src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+            .w-1/3
+              = image_tag 'beach.JPG', alt: "Beach", class: "w-full 2xl:w-full aspect-square object-cover shadow-lg"

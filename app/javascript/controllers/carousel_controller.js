@@ -1,11 +1,12 @@
 import { Controller } from "@hotwired/stimulus"
 
 export default class extends Controller {
-  static targets = ["slide", "dot"]
+  static targets = ["slide", "dotContainer"]
 
   connect() {
     this.index = 0
     this.startX = 0
+    this.buildDots()
     this.element.addEventListener("touchstart", this.onTouchStart.bind(this), { passive: true })
     this.element.addEventListener("touchend", this.onTouchEnd.bind(this), { passive: true })
     this.update()
@@ -14,6 +15,20 @@ export default class extends Controller {
   disconnect() {
     this.element.removeEventListener("touchstart", this.onTouchStart.bind(this))
     this.element.removeEventListener("touchend", this.onTouchEnd.bind(this))
+  }
+
+  buildDots() {
+    const container = this.dotContainerTarget
+    container.innerHTML = ""
+    this.slideTargets.forEach(() => {
+      const dot = document.createElement("div")
+      dot.className = "w-3 h-3 rounded-full bg-white opacity-30"
+      container.appendChild(dot)
+    })
+  }
+
+  get dots() {
+    return Array.from(this.dotContainerTarget.children)
   }
 
   onTouchStart(e) {
@@ -40,7 +55,7 @@ export default class extends Controller {
     this.slideTargets.forEach((slide, i) => {
       slide.classList.toggle("hidden", i !== this.index)
     })
-    this.dotTargets.forEach((dot, i) => {
+    this.dots.forEach((dot, i) => {
       dot.classList.toggle("opacity-100", i === this.index)
       dot.classList.toggle("opacity-30", i !== this.index)
     })
