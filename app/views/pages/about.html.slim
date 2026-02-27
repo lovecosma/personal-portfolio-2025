@@ -4,15 +4,108 @@
 
 .p-4.min-h-screen
   .flex.justify-center.mt-16
-    .flex.flex-col.justify-center.items-center.space-y-8.max-w-4xl.px-4
-      .text-center
-        h1.text-4xl.font-bold.mb-4 About Me
+    .flex.flex-col.justify-center.items-center.space-y-8.px-4
+      section.text-left.min-h-screen.flex.flex-col.justify-center
+        .flex.justify-center.items-start.w-full.space-x-6.px-4
+          .space-y-4.w-1/2
+            h2.text-3xl.font-semibold.mb-4 Movement Has Always Shaped Me
+            p.text-xl
+              | I was born in Germany and raised in constant motion, moving across states and countries as part of a military family.
+            p.text-xl
+              | Yet despite the movement, New Orleans has always been home. It's rhythm, culture, and community anchored me. Music became my way of creating stability.
+            p.text-xl
+              | Music carried me through adolescence and into adulthood, eventually leading me to LSU, where I studied Music and Digital Media Programming.
+            p.text-xl
+              | Over time, my instinct for structure evolved. What began in sound became systems. What began in rhythm became code.
 
-      .w-full.max-w-3xl.bg-blue-950.rounded-lg.shadow-lg.p-8.space-y-6
-        .space-y-4
-          .text-lg.text-gray-300.leading-relaxed.space-y-4
-            p I'm a proud husband and father of 4, and family is at the heart of everything I do. When I'm not coding, you'll find me creating music or spending quality time with my loved ones.
+          .relative.w-1/4.mb-6.mr-6
+            = image_tag 'new-orleans.JPG', alt: "Aerial view of city at night", class: "w-3/4 aspect-square object-cover shadow-xl"
+            = image_tag 'airplane.jpeg', alt: "New Orleans", class: "absolute -bottom-40 -right-12 w-3/4 aspect-square object-cover shadow-xl"
 
-            p With over 6 years of experience as a software engineer, I specialize in building full-stack web applications using Ruby on Rails. I'm passionate about writing clean, maintainable code and creating solutions that make a real impact.
+      section.text-left.min-h-screen.flex.flex-col.justify-center
+        .flex.justify-center.items-start.w-full.space-x-6.px-4
+          .grid.grid-cols-2.w-1/3
+            = image_tag 'lsu-mixer.JPG', alt: "Me on LSU stage", class: "relative w-full aspect-square object-cover shadow-xl rotate-2 translate-x-8 translate-y-8 z-10"
+            = image_tag 'me-lsu-stage.JPG', alt: "Me creative coding", class: "relative w-full aspect-square object-cover shadow-xl -rotate-1 -translate-x-8 translate-y-8 z-20"
+            = image_tag 'me-creative-coding.jpeg', alt: "LSU mixer", class: "relative w-full aspect-square object-cover shadow-xl -rotate-2 translate-x-8 -translate-y-8 z-20"
+            = image_tag 'lsu-stage.JPG', alt: "LSU stage", class: "relative w-full aspect-square object-cover shadow-xl rotate-3 -translate-x-8 -translate-y-8 z-30"
+          .space-y-4.w-1/2.text-left
+            h2.text-3xl.font-semibold.mb-4 From Studio to Systems
+            p.text-xl
+              | At LSU, I began working in the music studio — recording, editing, arranging. I became obsessed with layers, timing, and structure.
+            p.text-xl
+              | Around the same time, I started working with JavaScript and multimedia tools like PD, Processing.js, and p5.js.
+            p.text-xl
+              | Code was expressive. Visual. Alive.
+            p.text-xl
+              | The studio taught me how to listen for patterns.
+              br
+                | Programming taught me how to build them.
+            p.text-xl
+              | I later completed the full-stack software engineering program at Flatiron School, where I trained in SQL, Ruby on Rails, and React.
+            p.text-xl
+              | Craft replaced curiosity.
 
-            p Based in Savannah, GA, I love learning new technologies and taking on challenging projects. Whether it's backend architecture, frontend design, or everything in between, I'm always eager to grow and contribute to meaningful work.
+      section.text-left.min-h-screen.flex.flex-col.justify-center
+        .flex.justify-center.items-center.w-full.space-x-6.px-4
+          .space-y-4.w-1/2.text-left
+            h2.text-3xl.font-semibold.mb-4 From Student to Teacher to Engineer
+            p.text-xl
+              | After graduating from Flatiron, I stayed on to teach — first part-time, then full-time. Teaching sharpened my understanding of software design and deepened my belief that clarity and empathy matter in engineering.
+            p.text-xl
+              | I later joined G2 as a software engineer, where I spent four years building, shipping, and growing. During that time, I earned two AWS Cloud Computing certifications and was nominated for awards recognizing performance and entrepreneurial spirit.
+            p.text-xl
+              | I was also appointed co-lead of G2's DEI employee resource group — a role that reflected something I value deeply: authenticity and kindness in professional spaces.
+            p.text-xl
+              | Growth, to me, has always meant lifting others as you climb.
+          .flex.flex-col.items-center.w-1/3.space-y-3
+            = image_tag 'me-at-flatiron.JPG', alt: "Me at Flatiron", class: "w-1/2 aspect-square object-cover shadow-lg -translate-x-30 translate-y-10"
+            = image_tag 'g2-screenshot.png', alt: "G2 screenshot", class: "w-3/4 h-full shadow-lg z-10"
+            = image_tag 'me-at-g2.JPG', alt: "Me at G2", class: "w-1/2 aspect-square object-cover shadow-lg translate-x-40 -translate-y-10 z-20"
+
+      section.min-h-screen.flex.flex-col.justify-center
+        .flex.justify-center.items-start.w-full.space-x-6.px-4
+          .flex.items-start.flex-shrink-0
+            .flex.flex-col.-space-y-20
+              = image_tag 'parade.JPG', alt: "Parade", class: "relative w-48 h-48 object-cover shadow-xl rotate-2"
+              = image_tag 'dunes.JPG', alt: "Dunes", class: "relative w-48 h-48 object-cover shadow-xl -rotate-1 mt-10"
+              = image_tag 'family-2.JPG', alt: "Family", class: "relative w-48 h-48 object-cover shadow-xl rotate-3 mt-16"
+            .flex.flex-col.mt-20.-space-y-20
+              = image_tag 'me-skating.jpg', alt: "Me skating", class: "relative w-48 h-64 object-cover shadow-xl -rotate-2 mb-1"
+              = image_tag 'scenic.jpg', alt: "Scenic view", class: "relative w-48 h-48 object-cover shadow-xl rotate-1"
+              = image_tag 'me-peforming.JPG', alt: "Me performing", class: "relative w-48 h-48 object-cover shadow-xl -rotate-3 mt-14"
+          .flex.flex-col.space-y-8.w-1/2
+            .space-y-4.text-left
+              h2.text-3xl.font-semibold.mb-4 And Still Climbing
+              p.text-xl
+                | My friends and family would describe me as adventurous, determined, kind, and deeply family-oriented.
+              p.text-xl
+                | I'm a husband and a father of three — soon to be four.
+              p.text-xl
+                | Over the past six years in Colorado, we've embraced the outdoors together. Hiking, exploring, climbing.
+              p.text-xl
+                | I've never stopped making music. And during these years, I've climbed mountains I once thought were beyond my reach — professionally, creatively, and personally.
+            .flex.items-center.space-x-6
+              .flex.items-end.-space-x-6
+                = image_tag 'hiking.JPG', alt: "Hiking", class: "relative w-48 h-48  object-cover shadow-xl rotate-2 z-10"
+                = image_tag 'family-1.jpg', alt: "Family", class: "relative w-48 h-48 object-cover shadow-xl -rotate-1 -translate-y-4 z-20"
+              iframe width="330" height="208" src="https://www.youtube.com/embed/hcXohBUeFTY?si=nGAkWhRIqjZW9V57" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+
+      section.text-left.min-h-screen.flex.flex-col.justify-center
+        .flex.justify-center.items-center.w-full.space-x-6.px-4
+          .space-y-4.w-1/2.text-left
+            h2.text-3xl.font-semibold.mb-4 A New Chapter
+            p.text-xl
+              | I'm currently in a season of transition — moving from Colorado to be closer to family in Savannah, Georgia.
+            p.text-xl
+              | Transitions can be intimidating.
+              br
+              | They're also clarifying.
+            p.text-xl
+              | I'm seeking my next professional peak — an opportunity to continue growing as a developer, husband, father, and person while making meaningful impact alongside people who value integrity, curiosity, and kindness.
+            p.text-xl.font-medium
+              | The climb continues.
+          .flex.flex-col.items-center.w-1/3.space-y-3
+            = image_tag 'mountains.JPG', alt: "Mountains", class: "w-1/2 aspect-square object-cover shadow-lg -translate-x-30 translate-y-10"
+            iframe.w-3/4.shadow-lg.z-10 width="560" height="315" src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
+            = image_tag 'beach.JPG', alt: "Beach", class: "w-1/2 aspect-square object-cover shadow-lg translate-x-40 -translate-y-10 z-20"
