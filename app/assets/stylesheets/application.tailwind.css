@@ -7,12 +7,3 @@
 @theme {
     --font-mono: "Space Mono", monospace;
 }
-
-body {
-  background-color: #1e1b4b; /* indigo-950 fallback */
-  background-image: url('/images/background.svg');
-  background-attachment: fixed;
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
-}
