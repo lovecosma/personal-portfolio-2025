@@ -7,3 +7,10 @@
 @theme {
     --font-mono: "Space Mono", monospace;
 }
+
+body {
+    background-image: url('/images/background.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
