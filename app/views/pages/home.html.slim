@@ -4,16 +4,16 @@
 
 .p-2.min-h-screen
   .flex-none.lg:flex.justify-center.items-center.gap-32.mt-16.w-full
-    p.block.lg:hidden.text-center.text-2xl.font-bold Web Developer • Educator • Musician • Husband & Father
+    p.block.lg:hidden.text-center.text-2xl.font-bold.mb-8 Web Developer • Educator • Musician • Husband & Father
     .flex.justify-center.mx-4
-      = image_tag 'about-hero-image.png', alt: "Matthew Williams", class: "w-96 h-auto rounded-xl shadow-2xl"
-    .flex.flex-col.justify-center.space-y-4.leading-8.lg:w-1/3.w-full.justify-center.items-center.text-center.space-y-6
-      .hidden.lg:block.p.text-2xl.font-bold Web Developer • Educator • Musician • Husband & Father
+      = image_tag 'about-hero-image.png', alt: "Matthew Williams", class: "w-96 h-auto rounded-xl shadow-2xl mb-8 lg:mb-0 2xl:w-[700px]"
+    .flex.flex-col.justify-center.space-y-4.leading-8.lg:w-1/3.2xl:w-2/5.w-full.justify-center.items-center.text-center.space-y-6.p-6.rounded-lg class="bg-indigo-950/50"
+      .hidden.lg:block.p.text-2xl.font-bold.2xl:text-4xl Web Developer • Educator • Musician • Husband & Father
       .py-1.font-semibold.space-y-4
-        p.text-3xl.leading-none Building with empathy.
-        p.text-3xl.leading-none Shipping with precision.
-        p.text-3xl.leading-none Climbing what’s next.
-      p.text-xl
+        p.text-3xl.leading-none.2xl:text-6xl Building with empathy.
+        p.text-3xl.leading-none.2xl:text-6xl Shipping with precision.
+        p.text-3xl.leading-none.2xl:text-6xl Climbing what’s next.
+      p.text-xl.2xl:text-2xl
         | My name is Matthew Williams. I'm a software engineer based in Savannah, GA. I have 6+ years of experience building web apps. Thank you for visiting my website!
       .flex.flex-col.space-y-4.lg:flex-row.lg:space-y-0.lg:space-x-4.my-8
         = link_to @sample_website_url, target: "_blank", rel: "noopener noreferrer", class: "px-3 py-2 rounded-xl bg-white text-indigo-950 font-semibold shadow hover:bg-gray-100 hover:text-indigo-900 transition text-center" do
@@ -24,20 +24,20 @@
 .p-2.min-h-screen
   .flex.justify-center.my-15.w-full.fw-bold
     .flex.flex-col.justify-center.items-center.text-center.space-y-6
-      .text-4xl.font-bold.leading-none Key Technologies
-      .text-xl.font-bold.leading-none I specialize in building full-stack apps with Rails
+      .text-4xl.font-bold.leading-none.mb-6.2xl:text-7xl Key Technologies
+      .text-xl.font-bold.leading-none.2xl:text-3xl I specialize in building full-stack apps with Rails
   .flex.justify-center.w-full.px-5
     .grid.grid-cols-1.w-full.space-y-10.px-2.md:grid-cols-2.lg:grid-cols-4
       - @tech_types.each do |tech_type|
         div
           .flex.flex-col.justify-center.items-center.text-center
-            = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12"
-            .text-2xl.font-semibold.mb-4.text-center
+            = image_tag 'icons/' + tech_type.icon_filename, alt: tech_type.name, class: "w-12 h-12 2xl:w-24 2xl:h-24"
+            .text-2xl.font-semibold.mb-4.text-center.2xl:text-4xl
               = tech_type.name
           - tech_type.technologies.each do |tech|
-            .m-1.text-center
+            .m-1.text-center.2xl:text-2xl
               = tech.name
-  .flex.justify-center.w-full.fw-bold.mb-6
-    .text-xl.text-center.font-bold.leading-none But I love opportunities to learn new technology too!
+  .flex.justify-center.w-full.fw-bold.mb-6.mt-12
+    .text-xl.text-center.font-bold.leading-none.2xl:text-3xl But I love opportunities to learn new technology too!
 
 
