@@ -4,10 +4,11 @@
 
 .p-2.min-h-screen
   .flex-none.lg:flex.justify-center.items-center.gap-32.mt-16.w-full
-    .flex.justify-center
+    p.block.lg:hidden.text-center.text-2xl.font-bold Web Developer • Educator • Musician • Husband & Father
+    .flex.justify-center.mx-4
       = image_tag 'about-hero-image.png', alt: "Matthew Williams", class: "w-96 h-auto rounded-xl shadow-2xl"
-    .flex.flex-col.justify-center.space-y-4.leading-8.w-1/3
-      p.text-2xl.font-bold Web Developer • Educator • Musician • Husband & Father
+    .flex.flex-col.justify-center.space-y-4.leading-8.lg:w-1/3.w-full.justify-center.items-center.text-center.space-y-6
+      .hidden.lg:block.p.text-2xl.font-bold Web Developer • Educator • Musician • Husband & Father
       .py-1.font-semibold.space-y-4
         p.text-3xl.leading-none Building with empathy.
         p.text-3xl.leading-none Shipping with precision.

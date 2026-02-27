@@ -9,3 +9,6 @@ application.register("hello", HelloController)
 
 import MobileNavController from "./mobile_nav_controller"
 application.register("mobile-nav", MobileNavController)
+
+import CarouselController from "./carousel_controller"
+application.register("carousel", CarouselController)
