@@ -47,13 +47,76 @@
   .flex.justify-center.my-15.w-full.px-4.lg:p-20
     .w-full.p-6.rounded-xl.space-y-8 class="bg-indigo-950/50"
       .flex.flex-col.justify-center.items-center.text-center.space-y-6
-        .text-2xl.font-bold.leading-none Engineering Philosophy
-      .flex.flex-col.space-y-4.lg:w-3/4.mx-auto
-        .text-lg.font-semibold Systems Thinking & Architecture
+        .text-2xl.font-bold.leading-none.mb-4 Engineering Philosophy
+      .flex.flex-col.space-y-4.lg:w-3/4.mx-auto.text-center.lg:text-left
+        .text-lg.font-semibold.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Systems Thinking & Architecture
+            = inline_icon "systems-thinking.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
         p.text-base.leading-8
-          | I think of systems design as more than just building software. It's about helping teams move faster and have a bigger impact through thoughtful trade offs. A strong system isn't just fast; it's clear, maintainable, and built with the realities of the future in mind.
+          | I think of systems design as more than just building software. It's about helping teams move faster and have a bigger impact through thoughtful tradeoffs. A strong system isn't just fast; it's clear, maintainable, and built with the realities of the future in mind.
         p.text-base.leading-8
-          | Working on high traffic, complex product lines has shown me how quickly the cost of poor architecture adds up. A caching decision that saves milliseconds can affect thousands of users at once, and a fragile data pipeline can create hours of debugging for teammates. I focus on clarity first, writing code that communicates intent without requiring a deep dive, and then optimize based on real bottlenecks, not assumptions.
+          | Working on high-traffic, complex product lines has shown me how quickly the cost of poor architecture adds up. A caching decision that saves milliseconds can affect thousands of users at once, and a fragile data pipeline can create hours of debugging for teammates. I focus on clarity first, writing code that communicates intent without requiring a deep dive, and then optimize based on real bottlenecks, not assumptions.
         p.text-base.leading-8
           | I see part of my role as being a steward of that clarity, making architectural choices that solve today's problems while setting the team up to confidently handle tomorrow's changes.
 
+        .text-lg.font-semibold.mt-8.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Code Quality and Technical Excellence
+            = inline_icon "code-quality.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
+        p.text-base.leading-8
+          | I believe quality in software is not about perfection. It is about intentionality and trust. I invest in testing, readability, and documentation not because they are required, but because they help teams move faster over time. When another engineer can read the code and immediately grasp what it does, they can ship faster and introduce fewer bugs.
+        p.text-base.leading-8
+          | I tend to favor consistency over novelty and practicality over theoretical purity. When making decisions, I often ask a simple question: will this make the system easier or harder for the next engineer to change with confidence?
+        p.text-base.leading-8
+          | Quality and speed are not opposites. Clear, well structured systems make it possible to achieve both.
+
+        .text-lg.font-semibold.mt-8.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Mentorship and Knowledge Sharing
+            = inline_icon "mentorship.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
+        p.text-base.leading-8
+          | Helping engineers grow is just as important to me as shipping features. While teaching full-stack development, I relied heavily on the Socratic method. Instead of simply showing solutions, I focused on asking questions that helped people strengthen their problem solving and judgment.
+        p.text-base.leading-8
+          | I see mentorship as helping engineers develop good instincts. That means learning how to weigh tradeoffs, ask the right questions, and make thoughtful decisions on their own. Code reviews become opportunities to teach. Pair programming becomes a way to think through problems together. Documentation becomes a way to leave clarity for the next person, including their future self.
+        p.text-base.leading-8
+          | At a senior level, I take responsibility for the growth of the people around me. I try to do that through thoughtful feedback, code review comments that explain the reasoning behind decisions, and by giving junior engineers the chance to work on problems that stretch them a little beyond their comfort zone.
+        p.text-base.leading-8
+          | The best team multiplier is not the fastest individual contributor. It is the person who helps everyone around them improve.
+
+        .text-lg.font-semibold.mt-8.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Shipping Over Perfection
+            = inline_icon "shipping.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
+        p.text-base.leading-8
+          | Great engineers ship. One of the most important skills in engineering is balancing ideal technical solutions with real business needs. I try to navigate that tension by making thoughtful tradeoffs instead of chasing perfection.
+        p.text-base.leading-8
+          | Through experience working on production systems, I learned to recognize the difference between technical debt that becomes dangerous over time and solutions that are simply good enough to move forward and learn from real feedback. Sometimes the right decision is to prioritize performance. Other times it is speed to market or long term maintainability.
+        p.text-base.leading-8
+          | My approach is to focus on the constraint that matters most in the moment. A 90 percent solution is often the right choice if it helps the team deliver value sooner, but I also pay attention to when cutting corners will create bigger problems later.
+        p.text-base.leading-8
+          | This is not about lowering standards. It is about being intentional about which standards matter most right now. Part of being a senior engineer is earning trust by making those calls well, shipping consistently while knowing when it is worth investing time to reduce technical debt.
+
+        .text-lg.font-semibold.mt-8.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Ownership and Accountability
+            = inline_icon "ownership.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
+        p.text-base.leading-8
+          | I believe engineers should take responsibility for more than just the code they write. To me, ownership means seeing a project through from the early idea all the way to production and beyond. It means understanding how the work affects users, collaborating closely with other teams, staying involved during deployment, and taking responsibility for the outcome, not just the output.
+        p.text-base.leading-8
+          | Working on large production systems taught me that ownership also includes paying attention after something ships. It means monitoring systems in production, responding when issues arise, and improving things based on real user behavior.
+        p.text-base.leading-8
+          | Ownership also means asking difficult questions. Are we solving the right problem? Are we measuring the right outcomes? What happens when this breaks?
+        p.text-base.leading-8
+          | I try to approach my work with that level of investment. I am not just completing tasks. I care about whether the work actually matters.
+
+        .text-lg.font-semibold.mt-8.text-center.lg:text-left
+          .flex.flex-col.items-center.gap-2.lg:flex-row
+            span.pb-1.border-b.border-white Continuous Learning and Adaptation
+            = inline_icon "continuous-learning.svg", class: "w-12 h-12 lg:w-7 lg:h-7"
+        p.text-base.leading-8
+          | The best engineers grow with their domain. I stay current without chasing hype. I learn deliberately, experiment thoughtfully, and I know when to evolve my approach. I've worked with multiple AI tools, learned new performance optimization techniques, and adapted my architecture decisions as our traffic and data needs changed.
+        p.text-base.leading-8
+          | Growth comes from reflecting on what didn't work, asking why, and building better mental models. I stay curious about emerging patterns and test ideas in low-stakes environments before committing. I also know that not every new tool or framework is worth learning; the skill is distinguishing signal from noise.
+        p.text-base.leading-8
+          | I strive to model intellectual humility by being confident in what I know while remaining genuinely uncertain about what comes next.
