@@ -124,5 +124,23 @@ ActiveRecord::Base.transaction do
     end
   end
 
+  # AI Tooling Technologies
+  ai_tooling = TechType.find_or_create_by!(name: 'AI Tooling') do |tt|
+    tt.icon_filename = 'ai.svg'
+    tt.rank = TechType.maximum(:rank).to_i + 1
+  end
+
+  [
+    { name: 'Anthropic Claude', rank: 1 },
+    { name: 'Claude Code', rank: 2 },
+    { name: 'OpenAI API', rank: 3 },
+    { name: 'ChatGPT', rank: 4 },
+    { name: 'Gemini', rank: 5 }
+  ].each do |tech_attrs|
+    ai_tooling.technologies.find_or_create_by!(name: tech_attrs[:name]) do |tech|
+      tech.rank = tech_attrs[:rank]
+    end
+  end
+
   puts "Seeded #{TechType.count} tech types with #{Technology.count} technologies"
 end
