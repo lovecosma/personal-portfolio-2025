@@ -138,13 +138,6 @@
 
       section.text-left.min-h-screen.flex.flex-col.justify-center.py-16.space-y-8
         h2.lg:hidden.text-center.text-lg.2xl:text-3xl.font-semibold.w-full.p-4.rounded-xl.mb-2 class="bg-indigo-950/50" A New Chapter
-        .w-full.lg:hidden data-controller="carousel"
-          .relative.w-full
-            div data-carousel-target="slide"
-              = image_tag 'mountains.JPG', alt: "Mountains", class: "w-full aspect-square object-cover shadow-xl"
-            div.hidden data-carousel-target="slide"
-              = image_tag 'beach.JPG', alt: "Beach", class: "w-full aspect-square object-cover shadow-xl"
-          .flex.justify-center.space-x-2.mt-3 data-carousel-target="dotContainer"
         .space-y-4.w-full.p-6.text-center.lg:hidden.rounded-xl class="bg-indigo-950/50"
           p.text-sm.lg:text-base
             | I'm currently in a season of transition — moving from Colorado to be closer to family in Savannah, Georgia.
@@ -170,10 +163,6 @@
               | I'm seeking my next professional peak — an opportunity to keep growing as a developer, husband, and father, and to make meaningful impact alongside people who value integrity, curiosity, and kindness.
             p.text-sm.lg:text-base.font-medium
               | The climb continues.
-          .flex.flex-col.items-center.w-1/3.space-y-3.p-6.rounded-xl class="bg-indigo-950/50"
-            = image_tag 'mountains.JPG', alt: "Mountains", class: "w-3/4 aspect-square object-cover shadow-lg -translate-x-8 translate-y-4"
-            iframe.w-3/4.shadow-lg.z-10 height="315" src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-            = image_tag 'beach.JPG', alt: "Beach", class: "w-3/4 aspect-square object-cover shadow-lg translate-x-8 -translate-y-4"
         .hidden.2xl:flex.justify-center.items-start.w-full.px-4.space-x-10.mb-10.space-y-4
           .p-6.flex.flex-col.w-3/4.rounded-xl class="bg-indigo-950/50"
             h2.text-2xl.2xl:text-3xl.font-semibold.shrink-0.mb-4.2xl:mb-12 A New Chapter
@@ -188,11 +177,3 @@
                 | I'm seeking my next professional peak — an opportunity to keep growing as a developer, husband, and father, and to make meaningful impact alongside people who value integrity, curiosity, and kindness.
               p.text-sm.lg:text-base.2xl:text-xl.font-medium
                 | The climb continues.
-        .flex.justify-center.w-full
-          .hidden.2xl:flex.2xl:w-1/2.p-6.justify-center.items-center.gap-6.rounded-xl class="bg-indigo-950/50"
-            .w-1/3
-              = image_tag 'mountains.JPG', alt: "Mountains", class: "w-full 2xl:w-full aspect-square object-cover shadow-lg"
-            .w-1/3
-              iframe.w-full.aspect-square.shadow-lg.z-10 src="https://www.youtube.com/embed/PI6ZhRm0BBU?si=6dT5XrXmCisLdfjA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen="true"
-            .w-1/3
-              = image_tag 'beach.JPG', alt: "Beach", class: "w-full 2xl:w-full aspect-square object-cover shadow-lg"
